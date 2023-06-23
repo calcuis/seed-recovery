@@ -1,5 +1,5 @@
 # seed-recovery
-Recover lost seed (used wallet with multiple missing words)
+Recover a lost seed (used wallet with multiple missing words)
 
 
 
