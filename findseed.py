@@ -53,6 +53,9 @@ def address_usage(address_list):
     return address
     
 def phrase_usage(seed_phrase_list, passphrase = "", derivation_path = ("0/0", "44'/0'/0'/0/0", "49'/0'/0'/0/0", "84'/0'/0'/0/0")):
+
+    print("Scanning...")
+    
     max_address_limit = 100
 
     seed_phrase_limit = max_address_limit//len(derivation_path)
