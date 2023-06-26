@@ -1,5 +1,5 @@
 # seed-recovery
-**Recover a lost seed (used wallet with multiple missing words)**
+**Recover a lost seed (i.e., a used wallet with multiple missing words)**
 
 The provided Python code implements functionality related to seed phrases, key derivation, and address generation.
 
