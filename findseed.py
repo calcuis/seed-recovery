@@ -7,11 +7,8 @@ import requests
 from pycoin.symbols.btc import network
 
 def calc_key(seed_phrase , passphrase):
-    seed = hashlib.pbkdf2_hmac("sha512",
-                                         seed_phrase.encode("utf-8"),
-                                         salt=("mnemonic" + passphrase).encode("utf-8"),
-                                         iterations=2048,
-                                         dklen=64)
+    
+    seed = hashlib.pbkdf2_hmac("sha512", seed_phrase.encode("utf-8"), salt=("mnemonic" + passphrase).encode("utf-8"), iterations=2048, dklen=64)
 
     master_key = network.keys.bip32_seed(seed)
 
